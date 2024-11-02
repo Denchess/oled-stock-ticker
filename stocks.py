@@ -25,7 +25,7 @@ def readGoogleFinance(response):
 # get a list of stock info objects from api    
 def getStocks(stocks):
     http = urllib3.PoolManager()
-    url = "http://www.google.com/finance/info?q="
+    url = "https://www.google.com/finance/"
     for i in range(0, len(stocks)):
         url += stocks[i] + ","                    # add stock tickers to request
     
